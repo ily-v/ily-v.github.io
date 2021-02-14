@@ -1,0 +1,91 @@
+*,
+html,
+body,
+main {
+    margin     : 0px;
+    box-sizing : border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+.login-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFCAED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-page label {
+    font-size: 25px;
+    font-style: bold;
+}
+.login-page input {
+    margin-top: 15px;
+    border: none;
+    font-size: 20px;
+}
+#name-input {
+    background: none;
+    border-bottom: 1px solid grey;
+}
+#submit {
+    background: none;
+}
+#warning {
+    display: none;
+}
+#warning.enabled {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    color: grey;
+    font-style: italic;
+}
+.gallery-page {
+display: none;
+}
+.login-page.disabled {
+    display: none;
+}
+.gallery-page.enabled {
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+#photos {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#photos img {
+    width: 250px;
+    margin: 20px;
+}
+@media screen and (max-width: 500px) {
+    #photos {
+        flex-direction: column;
+    }
+    #photos img {
+        width: 100%;
+        padding: none;
+        margin: 0px;
+    }
+}
+.end-message {
+    background-color: #FFCAED;
+    height: 250px;
+    font-size: 45px;
+    font-style: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
