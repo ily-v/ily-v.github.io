@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ily</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="media/heart.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="login-page" id="login-page">
+        <form id="form" name="form" action="POST">
+            <label>your name:<br /></label>
+            
+            <div class="submit-section">
+                <input id="name-input" type="text" />
+                <input type="button" value="→" id="submit" onclick="validate()" />
+            </div>
+            
+        </form>
+        <span id="warning">looks like this isn't meant for you!</span>
+    </div>
+    <div class="gallery-page" id="gallery-page"></div>
+</body>
+
+</html>
