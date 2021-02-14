@@ -70,6 +70,7 @@ display: none;
 @media screen and (max-width: 500px) {
     #photos {
         flex-direction: column;
+        width: 100%;
     }
     #photos img {
         width: 100%;
@@ -78,7 +79,6 @@ display: none;
     }
 }
 .end-message {
-    background-color: #FFCAED;
     height: 250px;
     font-size: 45px;
     font-style: bold;
@@ -86,6 +86,6 @@ display: none;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     justify-content: space-around;
 }
